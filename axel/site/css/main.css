@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.efter {
+    display: flex;
+
+}
+.innan {
+    display: none;
+}
+.boots {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: Notan 0.25s 1;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #36D125;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.header i {
+    color:white ;
+    font-size: 56px;
+}
+.center {
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 16px;
+}
+.center2 {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    background-color: rgba(0,0,0,0.2);
+}
+.bilder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+}
+.bildcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: solid #36D125 1px;
+    width: 50%;
+    background-size: 100%;
+    height: 25vw;
+}
+.bg1 {
+    background-image: url(../img/ADIDASGRÖn.jpg);
+}
+.textmitten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 56px;
+}
+.textmitten2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0,0,0,0.3);
+}
+.textmitten3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0,0,0,0.3);
+    padding-left: 8px;
+}
+.länkar {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.bottomborder {
+    border-bottom: 2px solid #36D125;
+    color: #36D125;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding-top: 16px;
+}
+.centreratext {
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+}
+.land {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 4.5%;
+}
+.sweden {
+    background-image: url("../img/sweden.png");
+}
+.germany {
+    background-image: url("../img/germany.png");
+}
+.italy {
+   background-image: url("../img/itlay.png"); 
+}
+.spain {
+    background-image: url("../img/Flag-Spain.jpg");
+}
+.england {
+    background-image: url("../img/Flag_of_North_England.JPG");
+}
+
+.liga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    animation: Neråt 0.5s 1;
+    width: 100%;
+    border: black solid 1px;
+}
+.resultat {
+    display: flex;
+    flex-direction: row;
+}
+p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+p1 {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+p2 {
+    color:#36D125;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: lightgrey;
+}
+a:hover {
+    color: #36D125;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #36D125;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-bottom: 16px;
+}
+@media screen
+and (orientation: portrait)
+and (max-device-width: 767px){
+    body {
+        margin: 0;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: #36D125;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header i {
+        font-size: 48px;
+        color:white ;
+    }
+    .textmitten {
+        height: 48px;
+    }
+    p {
+        margin: 0;
+    }
+
+}
+@media screen
+and (max-device-width: 321px) {
+    a {
+        font-size: small;
+    }
+}
+@keyframes Notan {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes Neråt {
+    0% {
+        transform: translate3d(0, -50%, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.efter2 {
+    display: flex;
+}
+.innan2 {
+    display: none;
+}
+
