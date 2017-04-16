@@ -100,9 +100,11 @@ body {
     border-bottom: 2px solid #36D125;
     color: #36D125;
 }
-.row {
+.landplusflagga {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 32%;
     height: 50px;
     padding-top: 16px;
 }
@@ -115,6 +117,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 40px;
+    height: 40px;
 }
 .sweden {
     background-image: url("../img/sweden.png");
@@ -136,21 +139,29 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 50%;
+    width: 100%;
+}
+.listorna {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
 }
 .lista {
     display: flex;
     flex-direction: column;
-    padding-left: 16px;
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding: 16px;
     animation: Neråt 0.5s 1;
-    width: 100%;
-    border: black solid 1px;
+    width: auto;
+    border: solid black 1px;
 }
 .resultat {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
 }
 p {
     color: white;
@@ -214,6 +225,38 @@ and (max-device-width: 767px){
     h1 {
         font-size: 16px;
     }
+    .landplusflagga {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35%;
+        padding-top: 8px;
+        height: 36px;
+    }
+    .land {
+        width: 20px;
+        height: 20px;
+    }
+    .mitten {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    .listorna {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen
+and (orientation: landscape)
+and (max-device-width: 1023px) {
+    body {
+        margin: 0;
+
+    }
 
 }
 @media screen
@@ -221,6 +264,9 @@ and (max-device-width: 321px) {
     a {
         font-size: small;
     }
+    .lista {
+         padding: 0;
+     }
 }
 @keyframes Notan {
     0% {
